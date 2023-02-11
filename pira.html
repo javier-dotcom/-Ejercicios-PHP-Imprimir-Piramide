@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+           color: rgb(30, 108, 88);
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        fieldset {
+            width: 40%;
+            margin: auto;
+            background-color:rgb(108, 30, 50);
+        }
+        
+        input {
+            width: 30%;
+            margin: 1rem;
+        }
+        h2{
+            background-color:rgb(108, 30, 50);
+            border:gray 2px solid;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicios PHP</h1>
+    <p>Escribir un programa con 3 funciones:
+        La primera función que pinte por pantalla una pirámide rellena a base de asteriscos. La base de la pirámide debe estar formada por 9 asteriscos. 
+        La segunda función, igual que la anterior, pero esta vez la pirámide estará hueca (se debe ver únicamente el contorno hecho con asteriscos). 
+        Y la última función, igual que las anteriores, pero esta vez la pirámide debe aparecer invertida, con el vértice hacia abajo.
+        </p>
+    <form style="text-align: center;" action="pira.php" method="get">
+        <fieldset>
+            <legend>
+                <h2>Imprimir piramides</h2>
+            </legend>
+            <form action="pira.php" method="get"><label>Ingresar N° para el lado de la piramide</label><br><br><input type="number" name="num" min="2" max="9"required><br><input type="submit" value="Imprimir"></form>
+        </fieldset>
+    </form>
+</body>
+
+</html>
